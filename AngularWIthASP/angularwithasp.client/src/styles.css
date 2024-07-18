@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #73067d;
+    --secondary-color: #dfaa33;
+    --highlight-color: #140b04;
+}
+
+body {
+    background-color: var(--primary-color);
+    height: 100vh;
+}
