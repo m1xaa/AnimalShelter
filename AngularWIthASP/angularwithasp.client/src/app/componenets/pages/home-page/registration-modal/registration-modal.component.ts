@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RegistrationRequest } from '../../../../models/Authentication/registration-request';
+import { Role } from '../../../../models/as-is/role';
 
 @Component({
   selector: 'app-registration-modal',
@@ -26,12 +27,13 @@ export class RegistrationModalComponent {
   registrationClick() {
     if(!this.registrationForm.valid) 
       return;
-    const request = {
+    const request: RegistrationRequest = {
       'name': this.registrationForm.value.name,
       'surname': this.registrationForm.value.surname,
       'email': this.registrationForm.value.email,
       'username': this.registrationForm.value.username,
       'password': this.registrationForm.value.password,
+      'roles': [Role.User]
     }
 
     this.register.emit(request);

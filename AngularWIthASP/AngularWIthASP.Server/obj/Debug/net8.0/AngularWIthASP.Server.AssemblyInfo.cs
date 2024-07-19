@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngularWIthASP.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1695b3f0bf31357b2e8432d11f35f5630b89037d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63e0d88f53d9a5d82fad0980815b2f95d50ce3a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngularWIthASP.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngularWIthASP.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

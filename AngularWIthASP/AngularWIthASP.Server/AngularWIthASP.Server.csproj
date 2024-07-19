@@ -10,14 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DTOs\RegistrationRequest.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="DTOs\RegistrationRequest.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Cors" Version="5.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
@@ -28,6 +21,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="MiNET" Version="1.0.2304" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -38,7 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <Folder Include="Repository\User\" />
+    <Folder Include="Services\User\" />
   </ItemGroup>
 
 </Project>

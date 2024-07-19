@@ -14,13 +14,17 @@ export class HomePageComponent {
 
   constructor(private authState: AuthStateService) {}
 
-  onLogin(loginRequest: LoginRequest) {}
+  onLogin(loginRequest: LoginRequest) {
+    this.authState.login(loginRequest);
+  }
 
   onCancelLogin() {
     this.showLoginModal = false; 
   }
 
-  onRegistration(registerRequest: RegistrationRequest) {}
+  onRegistration(registerRequest: RegistrationRequest) {
+    this.authState.register(registerRequest);
+  }
 
   onCancelRegistration() {
     this.showRegistrationModal = false;
