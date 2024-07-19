@@ -12,6 +12,7 @@ import { HomePageComponent } from './componenets/pages/home-page/home-page.compo
 import { RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule, NgForOf } from '@angular/common';
+import { MainPageComponent } from './componenets/pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule, NgForOf } from '@angular/common';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule, HttpClientModule,

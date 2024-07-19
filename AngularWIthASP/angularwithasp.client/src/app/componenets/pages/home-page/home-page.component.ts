@@ -9,22 +9,32 @@ import { RegistrationRequest } from '../../../models/Authentication/registration
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
-  showLoginModal = true;
+  showLoginModal = false;
   showRegistrationModal = false;
 
   constructor(private authState: AuthStateService) {}
 
   onLogin(loginRequest: LoginRequest) {}
 
-  onCancelLogin() {}
+  onCancelLogin() {
+    this.showLoginModal = false; 
+  }
 
   onRegistration(registerRequest: RegistrationRequest) {}
 
-  onCancelRegistration() {}
+  onCancelRegistration() {
+    this.showRegistrationModal = false;
+  }
 
-  onShowLoginModal() {}
+  onShowLoginModal() {
+    this.showLoginModal = true;
+  }
 
-  onShowRegistrationModal() {}
+  onShowRegistrationModal() {
+    this.showRegistrationModal=true;
+  }
 
-  onLogout() {}
+  onLogout() {
+    this.authState.logout();
+  }
 }

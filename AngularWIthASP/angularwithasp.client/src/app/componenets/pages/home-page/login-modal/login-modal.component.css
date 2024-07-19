@@ -11,6 +11,7 @@
 
 h2 {
     color: var(--primary-color);
+    text-align: left;
 }
 
 input, label {
@@ -29,8 +30,8 @@ input {
 }
 
 .modal-content {
+    padding: 2%;
     background-color: var(--secondary-color);
-    padding: 5%;
     border: 1px solid var(--highlight-color);
     border-radius: 10%;
     
@@ -45,4 +46,5 @@ input {
 button {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    border-radius: 5%;
 }

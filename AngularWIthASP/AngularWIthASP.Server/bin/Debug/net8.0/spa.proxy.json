@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:4200",
 "RedirectUrl": "",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\..\\angularwithasp.client",
+"WorkingDirectory": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\..\\angularwithasp.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

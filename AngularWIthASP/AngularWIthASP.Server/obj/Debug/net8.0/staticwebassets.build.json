@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "x+DKVafStGMft7huwDf1oHD+pMMwvL2OAAKT63pTclE=",
+  "Hash": "JXDVvMv0OzNVanAReExJqD9dz2gKWPp/qIXxuhVZkgk=",
   "Source": "AngularWIthASP.Server",
   "BasePath": "_content/AngularWIthASP.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\angularwithasp.client\\angularwithasp.client.esproj",
+      "Identity": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\angularwithasp.client\\angularwithasp.client.esproj",
       "Version": 2,
       "Source": "angularwithasp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

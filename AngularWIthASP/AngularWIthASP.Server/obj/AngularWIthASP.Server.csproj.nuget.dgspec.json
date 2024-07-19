@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj",
         "projectName": "AngularWIthASP.Server",
-        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\AngularWIthASP.Server.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,9 +45,27 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MiNET": {
+              "target": "Package",
+              "version": "[1.0.2304, )"
+            },
             "Microsoft.AspNetCore.SpaProxy": {
               "target": "Package",
               "version": "[8.*-*, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

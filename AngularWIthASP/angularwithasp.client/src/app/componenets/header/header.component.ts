@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { userKey } from '../../models/Authentication/user-key';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,24 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  @Output() login = new EventEmitter<void>();
+  @Output() registration = new EventEmitter<void>();
+  @Output() logout =  new EventEmitter<void>();
+
+
+  loginClick() {
+    this.login.emit();
+  }
+
+  registrationClick() {
+    this.registration.emit();
+  }
+
+  logoutClick() {
+    this.logout.emit();
+  }
+
+  isUserRegistered() {
+    return localStorage.getItem(userKey) != null;
+  }
 }

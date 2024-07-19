@@ -17,7 +17,7 @@ export class AuthStateService {
     this.authService.login(loginRequest).subscribe(user => {
       if (user) {
         this.storeUser(user);
-        this.router.navigate(['/']);
+        this.router.navigate(['main/']);
       }
     }) 
   }
@@ -26,7 +26,7 @@ export class AuthStateService {
     this.authService.register(registrationRequest).subscribe(user => {
       if (user) {
         this.storeUser(user);
-        this.router.navigate(['/']);
+        this.router.navigate(['main/']);
       }
     });
   }
@@ -37,5 +37,6 @@ export class AuthStateService {
 
   logout() {
     localStorage.removeItem(userKey);
+    this.router.navigate(['/']);
   }
 }

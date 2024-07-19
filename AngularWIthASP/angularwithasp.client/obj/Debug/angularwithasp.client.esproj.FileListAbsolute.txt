@@ -1,1 +1,2 @@
 C:\Users\Korisnik\Desktop\Fakultet\Hakatoni\AnimalShelter\AngularWIthASP\angularwithasp.client\obj\Debug\angularwithasp.client.esproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Fakultet\Hakatoni\AnimalShelter\AnimalShelter\AngularWIthASP\angularwithasp.client\obj\Debug\angularwithasp.client.esproj.CoreCompileInputs.cache
