@@ -9,18 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(MyAllowSpecificOrigins,
-        policy =>
-        {
-            policy.WithOrigins("https://127.0.0.1:4200")
-                .AllowAnyHeader()
-                .AllowAnyMethod();
-        });
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()   
+            .AllowAnyHeader()   
+            .AllowAnyMethod();   
+    });
 });
 
 builder.Services.AddControllers();
@@ -40,7 +39,7 @@ var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseCors(MyAllowSpecificOrigins);
+app.UseCors("AllowAll");
 
 
 // Configure the HTTP request pipeline.
