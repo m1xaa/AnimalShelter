@@ -1,5 +1,7 @@
 using AngularWIthASP.server.Repository.Context;
+using AngularWIthASP.Server.Repositories;
 using AngularWIthASP.Server.Repository.User;
+using AngularWIthASP.Server.Services;
 using AngularWIthASP.Server.Services.User;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,15 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: MyAllowSpecificOrigins,
+    options.AddPolicy(MyAllowSpecificOrigins,
         policy =>
         {
             policy.WithOrigins("https://127.0.0.1:4200")
-                .SetIsOriginAllowedToAllowWildcardSubdomains();
+                .AllowAnyHeader()
+                .AllowAnyMethod();
         });
 });
 
@@ -26,6 +30,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAnimalRepository, AnimalRepository>();
+builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -33,6 +40,8 @@ var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.UseCors(MyAllowSpecificOrigins);
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -42,7 +51,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
