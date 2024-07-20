@@ -10,7 +10,10 @@ public class Post
     public User User { get; set; }
     public DateOnly Created { get; set; }
 
-    public Post() {}
+    public Post()
+    {
+        Created = DateOnly.FromDateTime(DateTime.Now);
+    }
 
     public Post(Animal animal, User user, DateOnly created)
     {

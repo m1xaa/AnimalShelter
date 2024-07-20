@@ -21,4 +21,9 @@ public class UserService : IUserService
     {
         return _userRepository.Login(username, password);
     }
+
+    public Task<IEnumerable<Models.User>> GetAll()
+    {
+        return _userRepository.GetAll();
+    }
 }

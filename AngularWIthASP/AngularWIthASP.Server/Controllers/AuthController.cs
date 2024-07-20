@@ -19,6 +19,12 @@ namespace AngularWIthASP.Server.Controllers
             _userService = userService;
         }
 
+        [HttpGet()]
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await _userService.GetAll());
+        }
+
         [HttpPost("register")]
         public async Task<User> Register([FromBody] DTOs.RegistrationRequest request)
         {

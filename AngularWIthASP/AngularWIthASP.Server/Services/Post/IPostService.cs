@@ -9,7 +9,7 @@ namespace AngularWIthASP.Server.Services
     {
         Task<IEnumerable<Post>> GetAll();
         Task<Post> GetById(Guid id);
-        Task<Post> Create(Animal animal, Post post);
+        Task<Post> Create(Animal animal, Post post, Guid UserId);
         Task<Post> Update(Post post);
         Task Delete(Guid id);
     }

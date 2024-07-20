@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\dtos\\post\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\dtos\\post\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\services\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\services\\post\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Models\\User.cs",
-              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Models\\User.cs",
-              "RelativeToolTip": "AngularWIthASP.Server\\Models\\User.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBMAAAAfAAAA",
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Controllers\\PostController.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\Controllers\\PostController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T17:04:11.122Z",
+              "WhenOpened": "2024-07-20T18:07:21.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Models\\Post.cs",
-              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Models\\Post.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Models\\Post.cs",
-              "RelativeToolTip": "AngularWIthASP.Server\\Models\\Post.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Title": "CreatePostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\DTOs\\Post\\CreatePostRequest.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\DTOs\\Post\\CreatePostRequest.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\DTOs\\Post\\CreatePostRequest.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\DTOs\\Post\\CreatePostRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T17:04:09.327Z",
+              "WhenOpened": "2024-07-20T18:05:47.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Services\\User\\UserService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\Services\\User\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T18:02:44.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Post\\IPostService.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Services\\Post\\IPostService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Post\\IPostService.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\Services\\Post\\IPostService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T17:55:02.166Z",
               "EditorCaption": ""
             }
           ]
