@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-delete-post-modal',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class DeletePostModalComponent {
 
+  @Output() delete = new EventEmitter<void>();
+  @Output() cancel = new EventEmitter<void>();
+
+  cancelClick() {
+    this.cancel.emit();
+  }
+
+  deleteClick() {
+    this.delete.emit();
+  }
 }

@@ -15,6 +15,7 @@ export class HomePageComponent {
   constructor(private authState: AuthStateService) {}
 
   onLogin(loginRequest: LoginRequest) {
+    this.showLoginModal = false;
     this.authState.login(loginRequest);
   }
 
@@ -23,6 +24,7 @@ export class HomePageComponent {
   }
 
   onRegistration(registerRequest: RegistrationRequest) {
+    this.showRegistrationModal = false;
     this.authState.register(registerRequest);
   }
 

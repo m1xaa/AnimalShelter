@@ -1,1 +1,10 @@
-<p>delete-post-modal works!</p>
+<div class="modal-overlay">
+    <div class="modal-content">
+        <h2>Remove Post</h2>
+        <p>Are you sure you want to remove post?</p>
+        <div class="button-container">
+            <button (click)="cancelClick()">Cancel</button>
+            <button (click)="deleteClick()">Delete</button>
+        </div>
+    </div>
+</div>

@@ -17,7 +17,7 @@ export class AuthStateService {
     this.authService.login(loginRequest).subscribe(user => {
       if (user) {
         this.storeUser(user);
-        this.router.navigate(['main/']);
+        this.router.navigate(['posts/']);
       }
     }) 
   }
@@ -26,7 +26,7 @@ export class AuthStateService {
     this.authService.register(registrationRequest).subscribe(user => {
       if (user) {
         this.storeUser(user);
-        this.router.navigate(['main/']);
+        this.router.navigate(['posts/']);
       }
     });
   }

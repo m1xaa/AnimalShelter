@@ -1,1 +1,15 @@
-<p>posts-page works!</p>
+<button class="create-button" (click)="onCreatePost()">Create</button>
+<app-posts-table
+  [posts]="posts"
+  (delete)="onDeletePost($event)"
+/>
+<app-create-post-modal
+  *ngIf="showCreationModal"
+  (cancel)="onCloseCreationModal()"
+  (create)="onCreate($event)"
+/>
+<app-delete-post-modal
+  *ngIf="showDeleteModal"
+  (cancel)="onCloseDeleteModal()"
+  (delete)="onDelete()"
+/>

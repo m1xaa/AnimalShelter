@@ -1,1 +1,19 @@
-<p>create-post-modal works!</p>
+<div class="modal-overlay">
+    <div class="modal-content">
+        <h2>Create Post</h2>  
+        <form [formGroup]="createPostForm">
+            <label for="specie">Specie</label>
+            <input type="text" formControlName="specie" id="specie"/>
+            <label for="condition">Condition</label>
+            <input type="text" formControlName="condition" id="condition"/>
+            <label for="age">Age</label>
+            <input type="number" formControlName="age" id="age"/>
+            <div class="button-container">
+                <button (click)="createClick()">Create</button>
+                <button (click)="cancelClick()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
