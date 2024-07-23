@@ -1,31 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Post } from '../../../models/as-is/post';
 import { PostService } from '../../../services/post.service';
 import { CreatePostRequest } from '../../../models/post/create-post-request';
+import { select, Store } from '@ngrx/store';
+import { addPost, loadPosts, removePost } from '../../../state/posts/post.actions';
+import { selectAllPosts } from '../../../state/posts/post.selectors';
+import { Observable } from 'rxjs';
+import { AppState } from '../../../state/app.state';
 
 @Component({
   selector: 'app-posts-page',
   templateUrl: './posts-page.component.html',
   styleUrl: './posts-page.component.css'
 })
-export class PostsPageComponent {
+export class PostsPageComponent implements OnInit {
 
-  posts: Post[] = [];
+  public posts$: Observable<Post[]>;
   showCreationModal = false;
   showDeleteModal = false;
   selectedPost!: Post;
 
-  constructor(private postService: PostService){
-    this.postService.getAll().subscribe(data => {
-      if (data) {
-        this.posts = data;
-      }
-    });
+  constructor(private store: Store<AppState>) {
+    this.posts$ = this.store.select(selectAllPosts);
+  }
+
+  ngOnInit() {
+    this.store.dispatch(loadPosts());
   }
 
   onCreatePost() {
     this.showCreationModal = true;
   }
+
 
   onDeletePost(post: Post) {
     this.selectedPost = post;
@@ -37,12 +43,7 @@ export class PostsPageComponent {
   }
 
   onCreate(createPostRequest: CreatePostRequest) {
-    console.log(createPostRequest);
-    this.postService.create(createPostRequest).subscribe(data => {
-      if (data) {
-        this.posts = [...this.posts, data];
-      }
-    });
+    this.store.dispatch(addPost({request: createPostRequest}));
     this.showCreationModal = false;
   }
 
@@ -51,10 +52,7 @@ export class PostsPageComponent {
   }
 
   onDelete() {
-    this.postService.delete(this.selectedPost.id).subscribe(data => {
-      const index = this.posts.findIndex(p => p.id === this.selectedPost.id);
-      this.posts.splice(index, 1);
-    });
+    this.store.dispatch(removePost({id: this.selectedPost.id}));
     this.showDeleteModal = false;
   }
 }

@@ -17,6 +17,10 @@ import { PostsPageComponent } from './componenets/pages/posts-page/posts-page.co
 import { DeletePostModalComponent } from './componenets/pages/posts-page/ui/delete-post-modal/delete-post-modal.component';
 import { CreatePostModalComponent } from './componenets/pages/posts-page/ui/create-post-modal/create-post-modal.component';
 import { PostsTableComponent } from './componenets/pages/posts-page/ui/posts-table/posts-table.component';
+import { postReducer } from './state/posts/post.reducer';
+import { StoreModule } from '@ngrx/store';
+import { PostEffects } from './state/posts/post.effects';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,8 @@ import { PostsTableComponent } from './componenets/pages/posts-page/ui/posts-tab
   imports: [
     BrowserModule, HttpClientModule,
     AppRoutingModule,
+    StoreModule.forRoot({ todos: postReducer }),
+    EffectsModule.forRoot([PostEffects]),
     RouterOutlet,
     ReactiveFormsModule,
     CommonModule,
