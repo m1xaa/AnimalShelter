@@ -1,7 +1,5 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { Store } from "@ngrx/store";
-import { AppState } from "../app.state";
 import { PostService } from "../../services/post.service";
 import { addPost, addPostError, addPostSuccess, loadPosts, loadPostsError, loadPostsSuccess, removePost, removePostSuccess } from "./post.actions";
 import { catchError, from, map, mergeMap, of, switchMap } from "rxjs";
@@ -9,15 +7,14 @@ import { catchError, from, map, mergeMap, of, switchMap } from "rxjs";
 
 @Injectable()
 export class PostEffects {
-    constructor(
-        private actions$: Actions,
-        private store: Store<AppState>,
-        private postService: PostService
-    )
-    {
-    }
+  constructor(
+    private actions$: Actions,
+    private postService: PostService
+  ) {
+    
+  }
 
-    loadPosts$ = createEffect(() =>
+    loadPosts$ = createEffect(() => 
         this.actions$.pipe(
           ofType(loadPosts),
           switchMap(() =>
@@ -50,6 +47,6 @@ export class PostEffects {
               catchError((error) => of(addPostError({ error })))
             )
         )
-    )
+      )
     )
 }

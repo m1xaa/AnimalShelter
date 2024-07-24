@@ -15,13 +15,13 @@ import { AppState } from '../../../state/app.state';
 })
 export class PostsPageComponent implements OnInit {
 
-  public posts$: Observable<Post[]>;
+  public posts: Observable<Post[]>;
   showCreationModal = false;
   showDeleteModal = false;
   selectedPost!: Post;
 
   constructor(private store: Store<AppState>) {
-    this.posts$ = this.store.select(selectAllPosts);
+    this.posts = this.store.select(selectAllPosts);
   }
 
   ngOnInit() {

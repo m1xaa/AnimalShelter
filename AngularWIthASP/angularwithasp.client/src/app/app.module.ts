@@ -37,9 +37,10 @@ import { EffectsModule } from '@ngrx/effects';
     PostsTableComponent,
   ],
   imports: [
-    BrowserModule, HttpClientModule,
+    BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    StoreModule.forRoot({ todos: postReducer }),
+    StoreModule.forRoot({ posts: postReducer}),
     EffectsModule.forRoot([PostEffects]),
     RouterOutlet,
     ReactiveFormsModule,

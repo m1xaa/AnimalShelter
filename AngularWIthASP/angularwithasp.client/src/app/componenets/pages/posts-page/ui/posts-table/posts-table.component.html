@@ -1,5 +1,5 @@
-<div class="cards-container">
-    <div *ngFor="let post of posts" class="card">
+<div class="cards-container" *ngIf="posts | async as here">
+    <div *ngFor="let post of here" class="card">
       <div class="card-body">
         <p>{{post.animal.specie}}</p>
         <p>{{ post.animal.age }}</p>

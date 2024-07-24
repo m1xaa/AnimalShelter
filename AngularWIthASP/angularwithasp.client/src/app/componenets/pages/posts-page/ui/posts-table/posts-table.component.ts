@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Post } from '../../../../../models/as-is/post';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-posts-table',
@@ -8,7 +9,7 @@ import { Post } from '../../../../../models/as-is/post';
 })
 export class PostsTableComponent {
 
-  @Input() posts!: Post[];
+  @Input() posts!: Observable<Post[]>;
   @Output() delete = new EventEmitter<Post>();
 
   onDelete(post: Post) {

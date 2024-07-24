@@ -8,6 +8,9 @@ import {
   loadPostsSuccess,
   removePostError,
   removePostSuccess,
+  addPost,
+  removePost,
+  loadPosts,
 } from './post.actions';
 
 export interface PostState {
@@ -22,6 +25,12 @@ export const initialState: PostState = {
 
 export const postReducer = createReducer(
   initialState,
+  on(addPost, (state) => ({
+    ...state  })),
+  on(removePost, (state) => ({
+    ...state  })),
+  on(loadPosts, (state) => ({
+    ...state  })),
   on(addPostSuccess, (state, { post }) => ({
     ...state,
     posts: [...state.posts, post],

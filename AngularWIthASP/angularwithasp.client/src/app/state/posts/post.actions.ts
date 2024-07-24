@@ -33,7 +33,7 @@ export const removePostError = createAction(
 );
 
 
-export const loadPosts = createAction('[Post Page] Load Todos');
+export const loadPosts = createAction('[Post Page] Load Posts');
 
 export const loadPostsSuccess = createAction(
     '[Post Page] Load Posts Success',
