@@ -22,6 +22,10 @@ import { PostEffects } from './state/posts/post.effects';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { PostPageComponent } from './componenets/pages/post-page/post-page.component';
+import { ReviewDisplayComponent } from './componenets/pages/post-page/reviews/review-display/review-display.component';
+import { DeleteReviewModalComponent } from './componenets/pages/post-page/reviews/delete-review-modal/delete-review-modal.component';
+import { CreateReviewModalComponent } from './componenets/pages/post-page/reviews/create-review-modal/create-review-modal.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { environment } from '../environments/environment';
     DeletePostModalComponent,
     CreatePostModalComponent,
     PostsTableComponent,
+    PostPageComponent,
+    ReviewDisplayComponent,
+    DeleteReviewModalComponent,
+    CreateReviewModalComponent,
   ],
   imports: [
     BrowserModule,

@@ -32,10 +32,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DTOs\Review\" />
     <Folder Include="DTOs\Post\" />
     <Folder Include="Repository\Animal\" />
+    <Folder Include="Repository\Review\" />
     <Folder Include="Repository\Post\" />
     <Folder Include="Repository\User\" />
+    <Folder Include="Services\Review\" />
     <Folder Include="Services\Post\" />
     <Folder Include="Services\User\" />
   </ItemGroup>
