@@ -12,7 +12,8 @@ export class HomePageComponent {
   showLoginModal = false;
   showRegistrationModal = false;
 
-  constructor(private authState: AuthStateService) {}
+  constructor(private authState: AuthStateService) {
+  }
 
   onLogin(loginRequest: LoginRequest) {
     this.showLoginModal = false;

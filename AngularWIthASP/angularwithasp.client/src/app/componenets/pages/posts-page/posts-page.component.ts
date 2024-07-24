@@ -7,6 +7,7 @@ import { addPost, loadPosts, removePost } from '../../../state/posts/post.action
 import { selectAllPosts } from '../../../state/posts/post.selectors';
 import { Observable } from 'rxjs';
 import { AppState } from '../../../state/app.state';
+import { Actions } from '@ngrx/effects';
 
 @Component({
   selector: 'app-posts-page',
@@ -15,13 +16,15 @@ import { AppState } from '../../../state/app.state';
 })
 export class PostsPageComponent implements OnInit {
 
-  public posts: Observable<Post[]>;
+  posts: Observable<Post[]>;
   showCreationModal = false;
   showDeleteModal = false;
   selectedPost!: Post;
 
-  constructor(private store: Store<AppState>) {
+  constructor(private store: Store<AppState>, private actions: Actions) {
     this.posts = this.store.select(selectAllPosts);
+    console.log(this.store)
+    console.log(this.actions)
   }
 
   ngOnInit() {

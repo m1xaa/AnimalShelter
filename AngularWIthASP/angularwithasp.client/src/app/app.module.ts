@@ -10,9 +10,8 @@ import { HeaderComponent } from './componenets/header/header.component';
 import { FooterComponent } from './componenets/footer/footer.component';
 import { HomePageComponent } from './componenets/pages/home-page/home-page.component';
 import { RouterOutlet } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { CommonModule, NgForOf } from '@angular/common';
-import { MainPageComponent } from './componenets/pages/main-page/main-page.component';
 import { PostsPageComponent } from './componenets/pages/posts-page/posts-page.component';
 import { DeletePostModalComponent } from './componenets/pages/posts-page/ui/delete-post-modal/delete-post-modal.component';
 import { CreatePostModalComponent } from './componenets/pages/posts-page/ui/create-post-modal/create-post-modal.component';
@@ -21,6 +20,8 @@ import { postReducer } from './state/posts/post.reducer';
 import { StoreModule } from '@ngrx/store';
 import { PostEffects } from './state/posts/post.effects';
 import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,6 @@ import { EffectsModule } from '@ngrx/effects';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
-    MainPageComponent,
     PostsPageComponent,
     DeletePostModalComponent,
     CreatePostModalComponent,
@@ -42,6 +42,7 @@ import { EffectsModule } from '@ngrx/effects';
     AppRoutingModule,
     StoreModule.forRoot({ posts: postReducer}),
     EffectsModule.forRoot([PostEffects]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     RouterOutlet,
     ReactiveFormsModule,
     CommonModule,
