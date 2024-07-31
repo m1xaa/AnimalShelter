@@ -1,1 +1,25 @@
-<p>post-page works!</p>
+<div class="content">
+    <div class="left">
+        <div class="transformed"><h4 class="inline">Specie:  </h4> <h2 class="inline"><b>{{post.animal.specie}}</b></h2></div>
+        <h4 class="transformed">Age: <b>{{post.animal.age}}</b></h4>
+        <h4 class="transformed">Condition: <b>{{post.animal.condition}}</b></h4>
+    </div>
+    <div class="right">
+        <h2>User Information</h2>
+        <h4 class="transformed">Name: {{post.user.name}}</h4>
+        <h4 class="transformed">Surname: {{post.user.surname}}</h4>
+        <h4 class="transformed">Email: {{post.user.email}}</h4>
+        <h4 class="transformed">Username: {{post.user.username}}</h4>
+    </div>
+</div>
+
+<app-create-review-modal
+
+/>
+
+<app-review-display
+/>
+
+<app-delete-review-modal
+*ngIf="showDeleteModal"
+/>

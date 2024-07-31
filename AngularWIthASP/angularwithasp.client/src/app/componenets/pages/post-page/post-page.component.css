@@ -1,0 +1,17 @@
+.content {
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inline {
+    display:inline
+}
+
+.right .transformed {
+    text-align: center;
+}
+
+.transformed:hover {
+    transform: scale(1.1);
+}

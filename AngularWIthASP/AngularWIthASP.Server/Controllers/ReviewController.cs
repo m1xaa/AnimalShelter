@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Cors;
 namespace AngularWIthASP.Server.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/post")]
     public class ReviewController : ControllerBase
     {
 
@@ -20,23 +20,23 @@ namespace AngularWIthASP.Server.Controllers
             _reviewService = reviewService;
         }
 
-        [HttpGet()]
+        [HttpGet("{postId}/reviews")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _reviewService.GetAll());
         }
 
-        [HttpPost()]
+        [HttpPost("{postId}/reviews")]
         public async Task<IActionResult> Create([FromBody] DTOs.CreateReviewRequest request)
         {
             var review = new Review(request.Content);
             return Ok(await _reviewService.Create(review, request.PostId, request.UserId));
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        [HttpDelete("{postId}/reviews/{reviewId}")]
+        public async Task<IActionResult> Delete([FromRoute] Guid reviewId)
         {
-            await _reviewService.Delete(id);
+            await _reviewService.Delete(reviewId);
             return NoContent();
         }
     }

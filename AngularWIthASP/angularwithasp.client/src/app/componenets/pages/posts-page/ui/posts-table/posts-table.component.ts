@@ -11,8 +11,13 @@ export class PostsTableComponent {
 
   @Input() posts!: Observable<Post[]>;
   @Output() delete = new EventEmitter<Post>();
+  @Output() visit = new EventEmitter<Post>();
 
   onDelete(post: Post) {
     this.delete.emit(post);
+  }
+
+  onVisit(post: Post) {
+    this.visit.emit(post);
   }
 }

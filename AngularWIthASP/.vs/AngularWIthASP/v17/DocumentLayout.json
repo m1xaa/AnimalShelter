@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\services\\review\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\services\\review\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|c:\\users\\korisnik\\desktop\\fakultet\\hakatoni\\animalshelter\\animalshelter\\angularwithasp\\angularwithasp.server\\dtos\\review\\createreviewrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FE64FD6-FA9F-4280-9646-F3872AACE0B6}|AngularWIthASP.Server\\AngularWIthASP.Server.csproj|solutionrelative:angularwithasp.server\\dtos\\review\\createreviewrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
-              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
-              "RelativeToolTip": "AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:46:19.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "AngularWIthASP.Server\\Controllers\\ReviewController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "AngularWIthASP.Server\\Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:46:08.793Z",
+              "WhenOpened": "2024-07-31T12:34:31.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateReviewRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\DTOs\\Review\\CreateReviewRequest.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\DTOs\\Review\\CreateReviewRequest.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\DTOs\\Review\\CreateReviewRequest.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\DTOs\\Review\\CreateReviewRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:32:55.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
+              "RelativeDocumentMoniker": "AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
+              "RelativeToolTip": "AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:46:19.839Z",
               "EditorCaption": ""
             }
           ]

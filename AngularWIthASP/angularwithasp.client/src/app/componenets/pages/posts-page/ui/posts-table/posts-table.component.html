@@ -1,6 +1,6 @@
 <div class="cards-container" *ngIf="posts | async as here">
     <div *ngFor="let post of here" class="card">
-      <div class="card-body">
+      <div class="card-body" (click)="onVisit(post)">
         <p>{{post.animal.specie}}</p>
         <p>{{ post.animal.age }}</p>
         <p>{{post.animal.condition}}</p>

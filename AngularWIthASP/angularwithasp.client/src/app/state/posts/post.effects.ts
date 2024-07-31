@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { PostService } from "../../services/post.service";
-import { addPost, addPostError, addPostSuccess, loadPosts, loadPostsError, loadPostsSuccess, removePost, removePostSuccess } from "./post.actions";
+import { addPost, addPostError, addPostSuccess, loadPosts, loadPostsError, loadPostsSuccess, removePost, removePostError, removePostSuccess } from "./post.actions";
 import { catchError, from, map, mergeMap, of, switchMap } from "rxjs";
 
 @Injectable()
@@ -42,7 +42,7 @@ export class PostEffects {
       switchMap(action => 
           from(this.postService.delete(action.id)).pipe(
             map(() => removePostSuccess({ id: action.id})),
-            catchError((error) => of(addPostError({ error })))
+            catchError((error) => of(removePostError({ error })))
           )
       )
     )

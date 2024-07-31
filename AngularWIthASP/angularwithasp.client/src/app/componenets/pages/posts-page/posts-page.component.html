@@ -2,6 +2,7 @@
 <app-posts-table
   [posts]="posts"
   (delete)="onDeletePost($event)"
+  (visit)="onVisitPost($event)"
 />
 <app-create-post-modal
   *ngIf="showCreationModal"

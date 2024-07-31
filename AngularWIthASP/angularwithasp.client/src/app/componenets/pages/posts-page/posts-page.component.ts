@@ -8,6 +8,7 @@ import { selectAllPosts } from '../../../state/posts/post.selectors';
 import { Observable } from 'rxjs';
 import { AppState } from '../../../state/app.state';
 import { Actions } from '@ngrx/effects';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posts-page',
@@ -21,7 +22,7 @@ export class PostsPageComponent implements OnInit {
   showDeleteModal = false;
   selectedPost!: Post;
 
-  constructor(private store: Store<AppState>, private actions: Actions) {
+  constructor(private store: Store<AppState>, private actions: Actions, private router: Router) {
     this.posts = this.store.select(selectAllPosts);
     console.log(this.store)
     console.log(this.actions)
@@ -57,5 +58,9 @@ export class PostsPageComponent implements OnInit {
   onDelete() {
     this.store.dispatch(removePost({id: this.selectedPost.id}));
     this.showDeleteModal = false;
+  }
+
+  onVisitPost(post: Post) {
+    this.router.navigate(['post/'], {state: {post: post}})
   }
 }
