@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ReviewService {
 
-  baseUrl: string = 'http://localhost:5200/api/v1/post/';
+  baseUrl: string = 'http://localhost:5200/api/v1/post';
 
   constructor(private http: HttpClient) {}
 
@@ -26,7 +26,4 @@ export class ReviewService {
   }
 }
 
-///TODO
-//reviewcontroller merge u post controller i na front i na back
-//dovrsiti sve sto se tice store za review i implementirati sve stranice vezane za review
-//kada se sve zavrsi malo pregledati back i front i ispraviti nekonvencionalne stvari
+

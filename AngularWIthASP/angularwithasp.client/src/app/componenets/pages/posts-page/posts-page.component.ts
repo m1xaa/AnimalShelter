@@ -22,10 +22,8 @@ export class PostsPageComponent implements OnInit {
   showDeleteModal = false;
   selectedPost!: Post;
 
-  constructor(private store: Store<AppState>, private actions: Actions, private router: Router) {
+  constructor(private store: Store<AppState>, private router: Router) {
     this.posts = this.store.select(selectAllPosts);
-    console.log(this.store)
-    console.log(this.actions)
   }
 
   ngOnInit() {

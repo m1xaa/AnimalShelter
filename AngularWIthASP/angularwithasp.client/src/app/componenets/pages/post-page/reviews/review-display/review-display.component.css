@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review-body {
+    border: 1px solid var(--highlight-color);
+    background-color: var(--secondary-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 450px;
+    margin-bottom: 3rem;
+    border-radius: 15%;
+}
+button {
+    margin-left: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}

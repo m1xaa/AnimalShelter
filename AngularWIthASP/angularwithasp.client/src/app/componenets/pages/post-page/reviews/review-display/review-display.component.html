@@ -1,1 +1,11 @@
-<p>review-display works!</p>
+<div class="content">
+    <div *ngFor="let review of reviews | async">
+        <div class="review-body">
+            <h4>{{review.user.username}}</h4>
+            <p>{{review.content}}</p>
+            <div class="button-container" *ngIf="isSameUser(review)">
+                <button (click)="deleteClick(review)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

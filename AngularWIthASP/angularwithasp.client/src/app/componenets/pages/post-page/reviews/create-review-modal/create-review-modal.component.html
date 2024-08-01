@@ -1,1 +1,8 @@
-<p>create-review-modal works!</p>
+<hr>
+    <form [formGroup]="createReviewForm" class="form-group">
+        <div class="review-input">
+            <input type="text" formControlName="content" id="content"/>
+            <button (click)="createClick()">Post Review</button>
+        </div>
+    </form>
+<hr>

@@ -26,6 +26,8 @@ import { PostPageComponent } from './componenets/pages/post-page/post-page.compo
 import { ReviewDisplayComponent } from './componenets/pages/post-page/reviews/review-display/review-display.component';
 import { DeleteReviewModalComponent } from './componenets/pages/post-page/reviews/delete-review-modal/delete-review-modal.component';
 import { CreateReviewModalComponent } from './componenets/pages/post-page/reviews/create-review-modal/create-review-modal.component';
+import { ReviewReducer } from './state/reviews/review.reducer';
+import { ReviewEffects } from './state/reviews/review.effects';
 
 @NgModule({
   declarations: [
@@ -48,8 +50,8 @@ import { CreateReviewModalComponent } from './componenets/pages/post-page/review
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    StoreModule.forRoot({ posts: postReducer}),
-    EffectsModule.forRoot([PostEffects]),
+    StoreModule.forRoot({ posts: postReducer, reviews: ReviewReducer}),
+    EffectsModule.forRoot([PostEffects, ReviewEffects]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     RouterOutlet,
     ReactiveFormsModule,

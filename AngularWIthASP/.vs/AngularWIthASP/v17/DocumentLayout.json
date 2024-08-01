@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "AngularWIthASP.Server\\Controllers\\ReviewController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Desktop\\Fakultet\\Hakatoni\\AnimalShelter\\AnimalShelter\\AngularWIthASP\\AngularWIthASP.Server\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "AngularWIthASP.Server\\Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T12:34:31.92Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "AngularWIthASP.Server\\DTOs\\Review\\CreateReviewRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T12:32:55.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T12:32:55.629Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "AngularWIthASP.Server\\Services\\Review\\ReviewService.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:46:19.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T17:46:19.839Z"
             }
           ]
         }

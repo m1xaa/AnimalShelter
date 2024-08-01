@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Review } from '../../../../../models/as-is/review';
 
 @Component({
   selector: 'app-delete-review-modal',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class DeleteReviewModalComponent {
 
+  @Input() review!: Review;
+  @Output() delete = new EventEmitter<void>();
+  @Output() cancel = new EventEmitter<void>();
+
+  cancelClick() {
+    this.cancel.emit();
+  }
+
+  deleteClick() {
+    this.delete.emit();
+  }
 }

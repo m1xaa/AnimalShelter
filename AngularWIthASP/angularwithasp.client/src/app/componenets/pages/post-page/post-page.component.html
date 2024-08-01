@@ -14,12 +14,17 @@
 </div>
 
 <app-create-review-modal
-
+(create)="onCreateReview($event)"
 />
 
 <app-review-display
+[reviews]="reviews"
+(delete)="onDeleteClick($event)"
 />
 
 <app-delete-review-modal
 *ngIf="showDeleteModal"
+[review]="selectedReview"
+(delete)="onDeleteReview()"
+(cancel)="onCancelDelete()"
 />
