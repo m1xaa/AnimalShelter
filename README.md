@@ -8,21 +8,21 @@ Also users can write their comments under each post to provide their feedback ab
 - Manage animal records
 - User authentication and authorization
 - Track adoptions and available animals
-- Reporting and analytics
 
 ## Technologies Used
 
 - ASP.NET Core
 - Entity Framework Core
 - PostgreSQL
+- Docker
 - Angular (for front-end)
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Node.js and npm](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 - [PostgreSQL](https://www.postgresql.org/download/)
+- [Docker](https://www.docker.com/)
 
 
